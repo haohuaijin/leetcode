@@ -15,8 +15,7 @@ public:
                 end = interval[1];
             }
         }
-        if(start != -1)
-            res.push_back({start, end});
+		res.push_back({start, end});
         return res;
     }
 };
