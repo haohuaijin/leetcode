@@ -2,7 +2,7 @@ class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
         vector<int> dp(amount+1, 0);
-        sort(coins.begin(), coins.end(), greater<int>()); 
+        // sort(coins.begin(), coins.end(), greater<int>()); // don't need
         return helper(coins, amount, dp);
     }
 
